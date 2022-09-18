@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+    <h1>Create a new Account</h1>
+    <h1></h1>
+    <form action="/create_account" method="post">
+        <input autocomplete="off" autofocus name="username" placeholder="Username" type="text">
+        <input autocomplete="off" autofocus name="password" placeholder="Password" type="text">
+        <input type="submit" value="Create">
+    </form>
+    <h3></h3>
+    <h3><a href="/login">Login</a></h3>
+{% endblock %}
